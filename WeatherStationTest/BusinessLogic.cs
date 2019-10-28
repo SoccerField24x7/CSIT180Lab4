@@ -16,7 +16,7 @@ namespace WeatherStation.BLTests
         {
             BusinessLogic bl = new BusinessLogic();
 
-            bl.HighTemperature = 50;
+            bl.LowTemperature = 50;
             bl.WindSpeed = 20;
 
             var result = bl.CalculateWindChill();
@@ -29,7 +29,7 @@ namespace WeatherStation.BLTests
         {
             BusinessLogic bl = new BusinessLogic();
 
-            bl.HighTemperature = 70;
+            bl.LowTemperature = 70;
             bl.WindSpeed = 20;
 
             Assert.AreEqual(bl.CalculateWindChill(), 9999);
