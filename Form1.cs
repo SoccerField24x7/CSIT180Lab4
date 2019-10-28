@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿/*********************************************************************
+ * Program:     Weather Station
+ * Student:     Jesse Quijano (#001456787)
+ * Purpose:     Lab4 - Accept Temperature and wind speed to calculate windchill and generate forecast
+ * Description: The purpose of this lab is to utilize a class to house the logic elements of the
+ *              application and to dymanically populate UI elements.
+ *************************************************************************************/
+
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WeatherStation.BL;
 
