@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="BusinessLogic\BusinessLogic.cs" />
     <Compile Include="BusinessLogic\IBusinessLogic.cs" />
+    <Compile Include="BusinessLogic\SkyCondition.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
