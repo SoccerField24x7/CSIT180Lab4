@@ -65,8 +65,13 @@ namespace WeatherStation.BL
 
         public double CalculateWindChill()
         {
-            //Wind Chill = 35.74 + 0.6215T – 35.75(V ^ 0.16) + 0.4275T(V ^ 0.16)
+            // According to the NOAA, windchill can only be calculated when the temperature is below 70 degrees F
+            if (this.HighTemperature >= 70)
+            {
+                return 9999;
+            }
 
+            //Wind Chill Formula = 35.74 + 0.6215T – 35.75(V ^ 0.16) + 0.4275T(V ^ 0.16)
             return 35.74 + 0.6215 * this.HighTemperature - 35.75 * (Math.Pow(this.WindSpeed , 0.16)) + 0.4275 * this.HighTemperature * (Math.Pow(this.WindSpeed, 0.16));
         }
 
